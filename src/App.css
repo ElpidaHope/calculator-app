@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Spartan;
+
+}
+
+.main-body {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  /* background-color: red; */
+  height: 100vh;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 20px;
+  max-width: 700px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.theme-controller {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.theme-controller h4 {
+  text-transform: uppercase;
+  margin-top: 18px;
+  font-size: 14px;
+}
+
+.number {
+  padding: 0 5px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+
+}
+
+.number span {
+  font-size: 12px;
+}
+
+.toggler input {
+  width: 60px;
+  -webkit-appearance: none;
+  outline: none;
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 3px 5px;
+}
+
+.toggler input::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.display {
+  height: 80px;
+}
+
+.display input {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  font-size: 32px;
+  font-family: inherit;
+  text-align: right;
+  outline: none;
+  border: none;
+  padding: 20px;
+}
+
+.main-calculator {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 25px;
+  border-radius: 10px;
+}
+
+.two {
+  grid-column: span 2;
+}
+
+button {
+  font-family: inherit;
+  border: none;
+  padding: 10px 0;
+  font-size: 32px;
+  border-radius: 10px;
+  text-transform: uppercase;
+}
+
+.special-key {
+  font-size: 20px;
+}
+
+
+.main-body.theme1 {
+  background-color: hsl(222, 26%, 31%);
+}
+
+.theme1 h1, .theme1 h4, .theme1 .number {
+  color: hsl(0,0%,100%);
+}
+
+.theme1 .display input {
+  background-color: hsl(224, 36%, 15%);
+  color: hsl(0,0%,100%);
+}
+
+.theme1 button {
+  color: hsl(221, 14%, 31%);
+  background-color: hsl(30, 25%, 89%);
+  box-shadow: 0px 5px 0px hsl(28, 16%, 65%);
+}
+
+.theme1 .main-calculator {
+  background-color: hsl(224, 36%, 15%);
+}
+
+.theme1 #equal-to {
+  background-color: hsl(6, 53%, 50%);
+  box-shadow: 0px 5px 0px hsl(6, 70%, 34%);
+  color: hsl(0, 0%, 100%);
+}
+
+.theme1 .special-key {
+  background-color: hsl(225, 21%, 49%);
+  color: hsl(0,0%,100%);
+  box-shadow: 0px 5px 0px hsl(224,28%, 35%);
+}
+
+.theme1 .toggler input {
+  background: hsl(223, 31%, 20%);
+}
+
+.theme1 .toggler input::-webkit-slider-thumb {
+  background: hsl(6, 63%, 50%);
+}
+
+/* THEME 2 */
+
+.main-body.theme2 {
+  background-color: hsl(0,0%,90%);
+}
+
+.theme2 h1, .theme2 h4, .theme2 .number {
+  color: hsl(60,10%,19%);
+}
+
+.theme2 .display input {
+  background-color: hsl(0,0%,93%);
+  color: hsl(60,01%,19%);
+}
+
+.theme2 button {
+  color: hsl(60, 10%, 19%);
+  background-color: hsl(45, 7%, 89%);
+  box-shadow: 0px 5px 0px hsl(35, 11%, 61%);
+}
+
+.theme2 .main-calculator {
+  background-color: hsl(0, 5%, 81%);
+}
+
+.theme2 #equal-to {
+  background-color: hsl(25, 98%, 40%);
+  box-shadow: 0px 5px 0px hsl(25, 99%, 27%);
+  color: hsl(0, 0%, 100%);
+}
+
+.theme2 .special-key {
+  background-color: hsl(185, 42%, 37%);
+  color: hsl(0,0%,100%);
+  box-shadow: 0px 5px 0px hsl(185, 58%, 25%);
+}
+
+.theme2 .toggler input {
+  background: hsl(0, 5%, 81%);
+}
+
+.theme2 .toggler input::-webkit-slider-thumb {
+  background: hsl(25, 98%, 40%);
+}
+
+/* THEME 3 */
+.main-body.theme3 {
+  background-color: hsl(268,75%,9%);
+}
+
+.theme3 h1, .theme3 h4, .theme3 .number {
+  color: hsl(52,100%,62%);
+}
+
+.theme3 .display input {
+  background-color: hsl(268,71%,12%);
+  color: hsl(52,100%,62%);
+}
+
+.theme3 button {
+  color: hsl(52, 100%, 62%);
+  background-color: hsl(268, 47%, 21%);
+  box-shadow: 0px 5px 0px hsl(290, 70%, 36%);
+}
+
+.theme3 .main-calculator {
+  background-color: hsl(268, 71%, 12%);
+}
+
+.theme3 #equal-to {
+  background-color: hsl(176, 100%, 44%);
+  box-shadow: 0px 5px 0px hsl(177, 92%, 70%);
+  color: hsl(198, 20%, 13%);
+}
+
+.theme3 .special-key {
+  background-color: hsl(281, 89%, 26%);
+  color: hsl(0,0%,100%);
+  box-shadow: 0px 5px 0px hsl(285, 91%, 52%);
+}
+
+.theme3 .toggler input {
+  background: hsl(268, 71%, 12%);
+}
+
+.theme3 .toggler input::-webkit-slider-thumb {
+  background: hsl(176, 100%, 44%);
+}
